@@ -1,2 +1,2 @@
-# IsmailKatoya.github.io-my-portfolio
+# IsmailKatoya.github.io
 My detailed portfolio
