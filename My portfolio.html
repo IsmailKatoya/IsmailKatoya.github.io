@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ismail Katoya Ali - Professional Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Light gray background */
+            color: #374151; /* Darker text color */
+        }
+        .section-heading {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 2rem;
+            font-size: 2.25rem; /* text-4xl */
+            font-weight: 700; /* font-bold */
+            color: #1f2937; /* Even darker heading color */
+        }
+        .section-heading::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -8px; /* Adjust as needed */
+            width: 70%; /* Line width */
+            height: 4px;
+            background-color: #6366f1; /* Indigo-500 */
+            border-radius: 9999px; /* Full rounded */
+        }
+        /* Custom hover effect for cards */
+        .card-hover:hover {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="antialiased leading-relaxed">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-lg p-4 sticky top-0 z-50 rounded-b-lg">
+        <div class="container mx-auto flex justify-between items-center px-4 md:px-8">
+            <a href="#" class="text-2xl font-bold text-indigo-600 rounded-md p-2 hover:bg-indigo-50 transition-all duration-300">Ismail Katoya Ali</a>
+            <div class="space-x-4 md:space-x-8">
+                <a href="#home" class="text-gray-700 hover:text-indigo-600 font-medium transition-colors duration-200 rounded-md p-2 hover:bg-gray-100">Home</a>
+                <a href="#resume" class="text-gray-700 hover:text-indigo-600 font-medium transition-colors duration-200 rounded-md p-2 hover:bg-gray-100">Resume</a>
+                <a href="#projects" class="text-gray-700 hover:text-indigo-600 font-medium transition-colors duration-200 rounded-md p-2 hover:bg-gray-100">Projects</a>
+                <a href="#lab-challenges" class="text-gray-700 hover:text-indigo-600 font-medium transition-colors duration-200 rounded-md p-2 hover:bg-gray-100">Lab Challenges</a>
+                <a href="#contact" class="text-gray-700 hover:text-indigo-600 font-medium transition-colors duration-200 rounded-md p-2 hover:bg-gray-100">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto p-4 md:p-8">
+        <!-- Home Section -->
+        <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center py-16 bg-white rounded-xl shadow-lg mb-12">
+            <div class="w-48 h-48 rounded-full overflow-hidden mb-8 shadow-xl border-4 border-indigo-200">
+                <!-- Photo section is now empty as requested -->
+            </div>
+            <h1 class="text-5xl font-extrabold text-gray-900 mb-4 tracking-tight">
+                Hello, I'm <span class="text-indigo-600">Ismail Katoya Ali</span>
+            </h1>
+            <p class="text-xl text-gray-600 max-w-2xl leading-relaxed">
+                3rd Place CA & Huawei Cybersecurity Bootcamp Western Region | Top 5 Kenyan & Top 200 Cybersecurity Talent on Cyber Talent Platform | 2x Kenya Science & Engineering Fair (KSEF) Regional Winner and 2019 National Finalist.
+            </p>
+            <div class="mt-10">
+                <a href="#contact" class="inline-block bg-indigo-600 text-white text-lg font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-indigo-700 transition-all duration-300 transform hover:scale-105">
+                    Get in Touch
+                </a>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="py-16 bg-white rounded-xl shadow-lg mb-12 px-6 md:px-12">
+            <h2 class="section-heading">Resume</h2>
+
+            <!-- Academic Background -->
+            <div class="mb-8">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4">Academic Background</h3>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-green-200 mb-4 card-hover">
+                    <p class="text-lg font-semibold text-indigo-700">Cyber Security, Forensics and Counterterrorism</p>
+                    <p class="text-gray-700">Kibabii University, Bungoma, Kenya</p>
+                    <p class="text-sm text-gray-500">Sep 2022 - Present</p>
+                    <ul class="list-disc list-inside text-gray-600 mt-2">
+                        <li>GPA: 3.0 | Grade: Proficient</li>
+                        <li>Relevant Courses: Networking, Application and Network Security, Database Security, Network Security, Linux Operating System, Network Analysis, AI Fundamentals.</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-blue-200 mb-4 card-hover">
+                    <p class="text-lg font-semibold text-indigo-700">Security Analyst, Cyber Security</p>
+                    <p class="text-gray-700">Cyber Shujaa</p>
+                    <p class="text-sm text-gray-500">2025 - Present</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-green-200 mb-4 card-hover">
+                    <p class="text-lg font-semibold text-indigo-700">HCIA-Security Certification, Cyber Security</p>
+                    <p class="text-gray-700">Huawei Online Talent</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-blue-200 mb-4 card-hover">
+                    <p class="text-lg font-semibold text-indigo-700">Certificate in ICT</p>
+                    <p class="text-gray-700">Abaad Technical Institute</p>
+                    <p class="text-sm text-gray-500">Completed: 2022 (6 months)</p>
+                    <ul class="list-disc list-inside text-gray-600 mt-2">
+                        <li>Grade: Above Average (Mastery)</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-green-200 card-hover">
+                    <p class="text-lg font-semibold text-indigo-700">High School Diploma</p>
+                    <p class="text-gray-700">Ribe Boy's National School</p>
+                    <p class="text-sm text-gray-500">Graduated: 2021</p>
+                    <ul class="list-disc list-inside text-gray-600 mt-2">
+                        <li>Grade: C Plain</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Professional Experience -->
+            <div class="mb-8">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4">Professional Experience</h3>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-green-200 mb-4 card-hover">
+                    <p class="text-lg font-semibold text-indigo-700">Cyber Security</p>
+                    <p class="text-gray-700">Kenya Power, Mombasa, Mombasa County, Kenya</p>
+                    <p class="text-sm text-gray-500">May 2025 - Present (2 months)</p>
+                </div>
+                 <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-blue-200 mb-4 card-hover">
+                    <p class="text-lg font-semibold text-indigo-700">Student</p>
+                    <p class="text-gray-700">Kibabii University, Bungoma County, Kenya</p>
+                    <p class="text-sm text-gray-500">Sep 2022 - Present (2 years 10 months)</p>
+                </div>
+                 <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-green-200 mb-4 card-hover">
+                    <p class="text-lg font-semibold text-indigo-700">Founder</p>
+                    <p class="text-gray-700">Resas Nation, Kenya</p>
+                    <p class="text-sm text-gray-500">Nov 2020 - Present (4 years 8 months)</p>
+                    <ul class="list-disc list-inside text-gray-600 mt-2">
+                        <li>An online community</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-blue-200 mb-4 card-hover">
+                    <p class="text-lg font-semibold text-indigo-700">Cyber Security Internship</p>
+                    <p class="text-gray-700">Hack Secure</p>
+                    <p class="text-sm text-gray-500">Apr 2025 - May 2025 (2 months)</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-green-200 mb-4 card-hover">
+                    <p class="text-lg font-semibold text-indigo-700">Cyber Security Intern</p>
+                    <p class="text-gray-700">Hacktify Cyber Security, Kenya</p>
+                    <p class="text-sm text-gray-500">Feb 2025 - Apr 2025 (3 months)</p>
+                    <ul class="list-disc list-inside text-gray-600 mt-2">
+                        <li>Gaining experience in the field of cyber security as well as mastering the art of collaboration and networking with peers.</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-blue-200 mb-4 card-hover">
+                    <p class="text-lg font-semibold text-indigo-700">Cyber Security Intern</p>
+                    <p class="text-gray-700">Center for Cyber Security Studies & Research, Mombasa County, Kenya</p>
+                    <p class="text-sm text-gray-500">Sep 2024 - Feb 2025 (6 months)</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-green-200 mb-4 card-hover">
+                    <p class="text-lg font-semibold text-indigo-700">Cyber Security Attachee</p>
+                    <p class="text-gray-700">Mombasa Law Court, Mombasa County, Kenya</p>
+                    <p class="text-sm text-gray-500">Aug 2024 - Feb 2025 (7 months)</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-blue-200 mb-4 card-hover">
+                    <p class="text-lg font-semibold text-indigo-700">Campus Ambassador</p>
+                    <p class="text-gray-700">Microsoft Learn Student Ambassadors, Bungoma, Bungoma County, Kenya</p>
+                    <p class="text-sm text-gray-500">Nov 2023 - Feb 2025 (1 year 4 months)</p>
+                    <ul class="list-disc list-inside text-gray-600 mt-2">
+                        <li>Part of the Microsoft student ambassadors team.</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-green-200 card-hover">
+                    <p class="text-lg font-semibold text-indigo-700">Cyber Security Intern</p>
+                    <p class="text-gray-700">Mvita Technical Institute, Makadara/Mji Wa Kale ward, Mombasa County, Kenya</p>
+                    <p class="text-sm text-gray-500">Jun 2024 - Aug 2024 (3 months)</p>
+                    <ul class="list-disc list-inside text-gray-600 mt-2">
+                        <li>Applied cybersecurity knowledge and skills learned at the University.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Certifications -->
+            <div class="mb-8">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4">Certifications</h3>
+                <ul class="list-disc list-inside text-gray-600 bg-gray-50 p-6 rounded-lg shadow-sm border border-blue-200 card-hover">
+                    <li>HCIA Security by Huawei</li>
+                    <li>Microsoft AI Fundamentals completion certificates</li>
+                    <li>Internship - United Latino Students Association (Issued Mar 2025, Credential ID: 1d313566-aa38-4c83-b1a3-72df183196dc)</li>
+                    <li>Currently working on Cyber Security and CEH by E-Council</li>
+                </ul>
+            </div>
+
+            <!-- Skills -->
+            <div class="mb-8">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4">Skills</h3>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-green-200 card-hover">
+                    <div class="mb-4">
+                        <p class="text-lg font-semibold text-indigo-700">Cybersecurity:</p>
+                        <p class="text-gray-600">Familiar with various concepts, tools, and techniques such as vulnerability scanning, penetration testing, cryptography, network security, web security, malware analysis, etc.</p>
+                    </div>
+                    <div class="mb-4">
+                        <p class="text-lg font-semibold text-indigo-700">Operating Systems:</p>
+                        <p class="text-gray-600">Proficient in Windows and Linux, and their security features and configurations.</p>
+                    </div>
+                    <div class="mb-4">
+                        <p class="text-lg font-semibold text-indigo-700">Programming Languages:</p>
+                        <p class="text-gray-600">Experienced in Python, Java, and currently working in SQL, and their applications in cybersecurity.</p>
+                    </div>
+                    <div>
+                        <p class="text-lg font-semibold text-indigo-700">General:</p>
+                        <p class="text-gray-600">Mentoring and Leadership, Problem Solving, Technical Proficiency in various cybersecurity tools and software.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Awards & Recognition -->
+            <div class="mb-8">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4">Awards & Recognition</h3>
+                <ul class="list-disc list-inside text-gray-600 bg-gray-50 p-6 rounded-lg shadow-sm border border-blue-200 card-hover">
+                    <li>TOP 200 World Rank & TOP 5 Kenyan Cybersecurity Talent on Cyber Talent Platform (June 2024)</li>
+                    <li>2nd Runner-Up, Cyber Security Bootcamp Eldoret, Western Region (Communication Authority of Kenya & Huawei, August 2023)</li>
+                    <li>Certificate of Merit "3rd Place" in the cybersecurity competition by CA Kenya and Huawei in Eldoret, Western Kenya (August 2023)</li>
+                    <li>Africa Cyber Defender Finalist 2023</li>
+                    <li>7th Position Best Talent in Kenya and top 200 world rank on Cyber Talent Platform (Overall)</li>
+                    <li>Numerous titles and awards in science and engineering fairs from 2018 to 2020 (Sub-county to National level)</li>
+                    <li>A straight (A) grade in Computer Studies, High School</li>
+                </ul>
+            </div>
+
+            <!-- Conferences -->
+            <div>
+                <h3 class="text-2xl font-bold text-gray-800 mb-4">Conferences</h3>
+                <ul class="list-disc list-inside text-gray-600 bg-gray-50 p-6 rounded-lg shadow-sm border border-green-200 card-hover">
+                    <li>Delegate, Data Protection Conference, Windsor Hotel, Nairobi, May 2024</li>
+                    <li>Blue Economy & Cyber Security, Sote Hub, Nyali</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-16 bg-white rounded-xl shadow-lg mb-12 px-6 md:px-12">
+            <h2 class="section-heading">Projects</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- NEW PROJECT: SDN Framework for Jamming Attack Mitigation -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md border border-green-200 transform hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-xl font-bold text-indigo-700 mb-2">SDN Framework for Jamming Attack Mitigation</h3>
+                    <p class="text-gray-700 mb-4">
+                        Developing a Software-Defined Networking (SDN) framework using Mininet-WIFI and a Ryu controller to detect, block, and mitigate jamming-based deauthentication attacks in wireless networks. This project includes comprehensive testing with and without SDN to demonstrate performance improvements in network uptime, packet loss, and throughput.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 text-sm">
+                        <li><span class="font-semibold">Technologies:</span> Mininet-WIFI, Ryu SDN Controller, Python (for Mininet scripts and controller logic).</li>
+                        <li><span class="font-semibold">Core Functionalities:</span> Traffic Monitoring, Threshold-based Attack Detection, Disconnection Monitoring, Attack Blocking, Client Rerouting, Post-Mitigation Restoration.</li>
+                        <li><span class="font-semibold">Testing:</span> Comparative analysis (with SDN vs. without SDN) across various scenarios (3 APs/10 clients, 5 APs/15 clients, 7 APs/50 clients) with 20 runs per scenario for reliability.</li>
+                    </ul>
+                    <!-- Replace '#' with the actual link to your project's GitHub repo or live demo -->
+                    <a href="#" class="inline-block mt-4 text-indigo-600 hover:underline font-medium">View Project &rarr;</a>
+                </div>
+
+                <!-- Existing Projects -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md border border-blue-200 transform hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-xl font-bold text-indigo-700 mb-2">TEBWERESA SMART BUTCHERIES</h3>
+                    <p class="text-gray-700 mb-4">
+                        Tebweresa Smart Butcheries is an innovative business concept addressing the unmet needs of convenient and affordable complete meal solutions in Kenya, particularly within rural and peri-urban areas. It uniquely combines a traditional butchery with a diverse selection of essential "side dishes" or accompaniments, offering a one-stop shop that simplifies meal preparation. Building on a proven model with existing traction in Kilifi County, it aims to evolve into Tebweresa Smart Butcheries.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 text-sm">
+                        <li><span class="font-semibold">Innovation:</span> Combines traditional butchery with diverse meal accompaniments.</li>
+                        <li><span class="font-semibold">Market:</span> Targets rural and peri-urban areas in Kenya.</li>
+                        <li><span class="font-semibold">Status:</span> Evolving business concept with existing traction.</li>
+                    </ul>
+                    <a href="#" class="inline-block mt-4 text-indigo-600 hover:underline font-medium">View Project &rarr;</a>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md border border-green-200 transform hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-xl font-bold text-indigo-700 mb-2">EcoWave Aquaculture Systems</h3>
+                    <p class="text-gray-700 mb-4">
+                        The EcoWave Aquaculture Systems project aims to implement Integrated Multi-Trophic Aquaculture (IMTA) along Kenya's coast. This system combines the farming of fish, shellfish, and seaweed in a single, balanced ecosystem. Fish provide nutrients for seaweed, which in turn purifies the water, while shellfish filter out particulate matter. This method not only enhances food security by increasing seafood production but also promotes environmental conservation by reducing the ecological footprint of aquaculture.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 text-sm">
+                        <li><span class="font-semibold">Focus:</span> Integrated Multi-Trophic Aquaculture (IMTA) for sustainable seafood production.</li>
+                        <li><span class="font-semibold">Benefits:</span> Enhanced food security, environmental conservation, reduced ecological footprint.</li>
+                    </ul>
+                    <a href="#" class="inline-block mt-4 text-indigo-600 hover:underline font-medium">View Project &rarr;</a>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md border border-blue-200 transform hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-xl font-bold text-indigo-700 mb-2">SOLARSENTINEL (Solar Microgrid Security)</h3>
+                    <p class="text-gray-700 mb-4">
+                        As the founder of Resas Nation, I am passionate about addressing Kenya’s energy challenges. This project aims to secure solar microgrids against cyber threats, ensuring uninterrupted energy supply in rural areas. We design a robust cybersecurity system specifically tailored for solar microgrids, protecting them from cyber attacks to enhance their reliability and resilience and empower communities with reliable energy access.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 text-sm">
+                        <li><span class="font-semibold">Goal:</span> Secure solar microgrids against cyber threats for rural communities.</li>
+                        <li><span class="font-semibold">Impact:</span> Uninterrupted energy supply, enhanced reliability and resilience.</li>
+                        <li><span class="font-semibold">Role:</span> Founder of Resas Nation, passionate about energy challenges.</li>
+                    </ul>
+                    <a href="#" class="inline-block mt-4 text-indigo-600 hover:underline font-medium">View Project &rarr;</a>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md border border-green-200 transform hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-xl font-bold text-indigo-700 mb-2">Resas Nation Prototype</h3>
+                    <p class="text-gray-700 mb-4">
+                        Developed an online community prototype focused on promoting inclusivity, accountability, and robust data protection for its users.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 text-sm">
+                        <li><span class="font-semibold">Goal:</span> Online community with strong emphasis on user safety and data privacy.</li>
+                        <li><span class="font-semibold">Key Features:</span> Inclusivity, accountability, data protection.</li>
+                    </ul>
+                    <!-- This project is mentioned as founded in Nov 2020. This could be the original Resas Nation Project. -->
+                    <a href="#" class="inline-block mt-4 text-indigo-600 hover:underline font-medium">View Project &rarr;</a>
+                </div>
+
+                <!-- Add more projects as needed by copying one of the above 'div' blocks -->
+            </div>
+        </section>
+
+        <!-- Lab Challenges Section -->
+        <section id="lab-challenges" class="py-16 bg-white rounded-xl shadow-lg mb-12 px-6 md:px-12">
+            <h2 class="section-heading">Lab Challenges</h2>
+            <div class="space-y-8">
+                <!-- Removed the introductory paragraph as requested -->
+
+                <!-- NEW LAB CHALLENGE: First Contact - Hard choices (CTF) -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md border border-green-200 card-hover">
+                    <h3 class="text-xl font-bold text-indigo-700 mb-2">First Contact - Hard choices (CTF)</h3>
+                    <div class="mb-4 text-gray-700">
+                        <p class="font-semibold">Problem Statement:</p>
+                        <p class="ml-4 italic">
+                            The sky tore open as the ship descended, a gleaming monolith against the midday sun. Without warning, every screen flickered - phones, billboards, watches - replaced by a single message: "You are invited." A voice followed: "This is the first contact. Your species has been selected to participate in CyberGame, an interstellar CTF. Success grants you access to galactic science, post-scarcity tech, and diplomatic recognition. Failure means we proceed with scheduled construction of a hyperspace bypass that, regrettably, requires the demolition of your planet. Here is Message One."
+                            <br>
+                            Then a stream of cryptic data pulsed across the screens - elegant, alien, and waiting.
+                            <br>
+                            Additional instructions from the Earth Command:
+                            <ul class="list-disc list-inside ml-4 mt-2">
+                                <li>Download the file.</li>
+                                <li>Find a hidden message.</li>
+                                <li>The messages are in the format SK-CERT{something} unless stated otherwise. Enter the full flag from the first "S" to the last "}".</li>
+                                <li>Do not write anything else into the answer field; the aliens expect the exact flag.</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="mb-4 text-gray-700">
+                        <p class="font-semibold">Approach:</p>
+                        <p class="ml-4">
+                            The flag was straightforwardly present in the `part1.txt` file provided. The primary step was to download and open the file, then search for the specified flag format.
+                        </p>
+                    </div>
+                    <div class="mb-4 text-gray-700">
+                        <p class="font-semibold">Tools Used:</p>
+                        <p class="ml-4">A standard text editor (to open `part1.txt`).</p>
+                    </div>
+                    <div class="mb-4 text-gray-700">
+                        <p class="font-semibold">Flag(s) Found:</p>
+                        <p class="ml-4 font-mono text-sm text-red-700">`SK-CERT{th1s-w0rks-w3ll}`</p>
+                    </div>
+                    <div class="mb-4">
+                        <p class="font-semibold text-gray-700">Screenshot:</p>
+                        <!-- Replace 'https://placehold.co/...' with the direct URL to your actual screenshot for this challenge. -->
+                        <img src="https://placehold.co/600x300/F0F0F0/6366F1?text=First+Contact+CTF+Screenshot" alt="First Contact CTF Screenshot" class="mt-2 rounded-lg shadow-sm border border-gray-200 max-w-full h-auto">
+                    </div>
+                    <div class="text-gray-700">
+                        <p class="font-semibold">Key Lessons Learned:</p>
+                        <ul class="list-disc list-inside ml-4">
+                            <li>Always check the provided files thoroughly, even for seemingly simple challenges.</li>
+                            <li>Pay close attention to specific flag formats and submission instructions.</li>
+                            <li>Sometimes the simplest solution is the correct one.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Existing Lab Challenge 1: SQL Injection Bypass Challenge -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md border border-blue-200 card-hover">
+                    <h3 class="text-xl font-bold text-indigo-700 mb-2">SQL Injection Bypass Challenge</h3>
+                    <div class="mb-4 text-gray-700">
+                        <p class="font-semibold">Problem Statement:</p>
+                        <p class="ml-4 italic">Bypass a login form that uses a vulnerable SQL query, without knowing the database structure, to gain administrative access.</p>
+                    </div>
+                    <div class="mb-4 text-gray-700">
+                        <p class="font-semibold">Approach:</p>
+                        <p class="ml-4">
+                            Used common SQL injection techniques like 'OR 1=1--' and UNION-based attacks. Identified potential database columns through trial and error, followed by data extraction.
+                        </p>
+                    </div>
+                    <div class="mb-4 text-gray-700">
+                        <p class="font-semibold">Tools Used:</p>
+                        <p class="ml-4">Burp Suite (for proxying and request manipulation), SQLMap (for automated discovery and exploitation once manual methods were understood).</p>
+                    </div>
+                    <div class="mb-4 text-gray-700">
+                        <p class="font-semibold">Flag(s) Found:</p>
+                        <p class="ml-4 font-mono text-sm text-red-700">`flag{YOUR_SQLI_FLAG_HERE}`</p>
+                    </div>
+                    <div class="mb-4">
+                        <p class="font-semibold text-gray-700">Screenshot:</p>
+                        <!-- Replace 'https://placehold.co/...' with the direct URL to your actual screenshot for this challenge. -->
+                        <img src="https://placehold.co/600x300/F0F0F0/6366F1?text=SQLi+Bypass+Screenshot" alt="SQL Injection Bypass Screenshot" class="mt-2 rounded-lg shadow-sm border border-gray-200 max-w-full h-auto">
+                    </div>
+                    <div class="text-gray-700">
+                        <p class="font-semibold">Key Lessons Learned:</p>
+                        <ul class="list-disc list-inside ml-4">
+                            <li>Understanding error-based and blind SQL injection types.</li>
+                            <li>Importance of parameterized queries in preventing such attacks.</li>
+                            <li>The power of systematic enumeration during exploitation.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Existing Lab Challenge 2: Cross-Site Scripting (XSS) Reflected Challenge -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md border border-green-200 card-hover">
+                    <h3 class="text-xl font-bold text-indigo-700 mb-2">Cross-Site Scripting (XSS) Reflected Challenge</h3>
+                    <div class="mb-4 text-gray-700">
+                        <p class="font-semibold">Problem Statement:</p>
+                        <p class="ml-4 italic">Inject malicious JavaScript into a search functionality that reflects user input without proper sanitization, to steal cookies.</p>
+                    </div>
+                    <div class="mb-4 text-gray-700">
+                        <p class="font-semibold">Approach:</p>
+                        <p class="ml-4">
+                            Tested various HTML tags and JavaScript payloads within the search input. Used common XSS payloads like `&lt;script&gt;alert(document.cookie)&lt;/script&gt;` and encoded variations.
+                        </p>
+                    </div>
+                    <div class="mb-4 text-gray-700">
+                        <p class="font-semibold">Tools Used:</p>
+                        <p class="ml-4">Web browser developer tools (console), Burp Suite (for URL encoding and request modification).</p>
+                    </div>
+                    <div class="mb-4 text-gray-700">
+                        <p class="font-semibold">Flag(s) Found:</p>
+                        <p class="ml-4 font-mono text-sm text-red-700">`flag{YOUR_XSS_FLAG_HERE}`</p>
+                    </div>
+                    <div class="mb-4">
+                        <p class="font-semibold text-gray-700">Screenshot:</p>
+                        <!-- Replace 'https://placehold.co/...' with the direct URL to your actual screenshot for this challenge. -->
+                        <img src="https://placehold.co/600x300/F0F0F0/6366F1?text=XSS+Reflected+Screenshot" alt="XSS Reflected Screenshot" class="mt-2 rounded-lg shadow-sm border border-gray-200 max-w-full h-auto">
+                    </div>
+                    <div class="text-gray-700">
+                        <p class="font-semibold">Key Lessons Learned:</p>
+                        <ul class="list-disc list-inside ml-4">
+                            <li>Importance of input validation and output encoding on the server-side.</li>
+                            <li>Different types of XSS (reflected, stored, DOM-based).</li>
+                            <li>How XSS can be leveraged for session hijacking and defacement.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Existing Lab Challenge 3: Basic Buffer Overflow Exploitation -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md border border-blue-200 card-hover">
+                    <h3 class="text-xl font-bold text-indigo-700 mb-2">Basic Buffer Overflow Exploitation</h3>
+                    <div class="mb-4 text-gray-700">
+                        <p class="font-semibold">Problem Statement:</p>
+                        <p class="ml-4 italic">Exploit a vulnerable C program with a stack-based buffer overflow to execute arbitrary shellcode.</p>
+                    </div>
+                    <div class="mb-4 text-gray-700">
+                        <p class="font-semibold">Approach:</p>
+                        <p class="ml-4">
+                            Identified the vulnerable function and buffer size. Used GDB to determine the offset to the return address and crafted a malicious input with NOP sled, shellcode, and the overwritten return address.
+                        </p>
+                    </div>
+                    <div class="mb-4 text-gray-700">
+                        <p class="font-semibold">Tools Used:</p>
+                        <p class="ml-4">GDB (GNU Debugger), Python (for payload generation), objdump (for disassembling), Kali Linux environment.</p>
+                    </div>
+                    <div class="mb-4 text-gray-700">
+                        <p class="font-semibold">Flag(s) Found:</p>
+                        <p class="ml-4 font-mono text-sm text-red-700">`flag{YOUR_BOF_FLAG_HERE}`</p>
+                    </div>
+                    <div class="mb-4">
+                        <p class="font-semibold text-gray-700">Screenshot:</p>
+                        <!-- Replace 'https://placehold.co/...' with the direct URL to your actual screenshot for this challenge. -->
+                        <img src="https://placehold.co/600x300/F0F0F0/6366F1?text=Buffer+Overflow+Screenshot" alt="Buffer Overflow Screenshot" class="mt-2 rounded-lg shadow-sm border border-gray-200 max-w-full h-auto">
+                    </div>
+                    <div class="text-gray-700">
+                        <p class="font-semibold">Key Lessons Learned:</p>
+                        <ul class="list-disc list-inside ml-4">
+                            <li>Understanding stack frames and function call conventions.</li>
+                            <li>The concept of return-oriented programming (ROP).</li>
+                            <li>Mitigation techniques like ASLR, DEP, and canaries.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Add more lab challenges as needed by copying one of the above 'div' blocks -->
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 bg-white rounded-xl shadow-lg px-6 md:px-12">
+            <h2 class="section-heading">Contact Me</h2>
+            <div class="text-center">
+                <p class="text-lg text-gray-700 mb-8 max-w-xl mx-auto">
+                    Feel free to reach out to me for collaborations, job opportunities, or just a chat about cybersecurity!
+                </p>
+                <div class="flex flex-wrap justify-center gap-6 mb-8">
+                    <a href="https://www.linkedin.com/in/resas-nation" target="_blank" class="inline-flex items-center bg-blue-700 text-white font-medium py-3 px-6 rounded-lg shadow-md hover:bg-blue-800 transition-all duration-300 transform hover:scale-105">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 110-4 2 2 0 010 4z"/></svg>
+                        LinkedIn
+                    </a>
+                    <!-- Please replace with your actual GitHub profile URL -->
+                    <a href="https://github.com/yourusername" target="_blank" class="inline-flex items-center bg-gray-800 text-white font-medium py-3 px-6 rounded-lg shadow-md hover:bg-gray-900 transition-all duration-300 transform hover:scale-105">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.83 9.504.475.087.68-.206.68-.456 0-.227-.007-.745-.01-1.46-2.78.605-3.37-1.34-3.37-1.34-.454-1.157-1.11-1.464-1.11-1.464-.91-.62.07-.608.07-.608 1.006.07 1.532 1.037 1.532 1.037.89 1.529 2.342 1.086 2.91.828.092-.643.35-1.086.636-1.33-2.22-.253-4.555-1.113-4.555-4.949 0-1.09.39-1.98.995-2.67-.1-.256-.435-1.26.096-2.646 0 0 .813-.267 2.656 1.026A9.123 9.123 0 0112 5.05c.85.006 1.7.11 2.494.321 1.842-1.293 2.655-1.026 2.655-1.026.53 1.386.195 2.39.096 2.646.606.69.996 1.58.996 2.67 0 3.844-2.338 4.693-4.562 4.942.358.307.674.915.674 1.848 0 1.33-.012 2.41-.012 2.748 0 .252.203.547.687.453C20.145 20.16 23 16.413 23 12.017 23 6.484 18.522 2 13 2h-1z" clip-rule="evenodd"/></svg>
+                        GitHub
+                    </a>
+                    <a href="mailto:ismail.ali04@students.kibu.ac.ke" class="inline-flex items-center bg-red-600 text-white font-medium py-3 px-6 rounded-lg shadow-md hover:bg-red-700 transition-all duration-300 transform hover:scale-105">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
+                        Email
+                    </a>
+                    <a href="tel:+254706477936" class="inline-flex items-center bg-green-600 text-white font-medium py-3 px-6 rounded-lg shadow-md hover:bg-green-700 transition-all duration-300 transform hover:scale-105">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.852l1.411 7.213A1 1 0 017.882 11h4.236a1 1 0 01.986.852l1.411 7.213A1 1 0 0116.847 18H19a1 1 0 011 1v1a1 1 0 01-1 1H1a1 1 0 01-1-1v-1a1 1 0 011-1h2.153z"/></svg>
+                        Call Me
+                    </a>
+                    <a href="https://wa.me/254746212421" target="_blank" class="inline-flex items-center bg-emerald-500 text-white font-medium py-3 px-6 rounded-lg shadow-md hover:bg-emerald-600 transition-all duration-300 transform hover:scale-105">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2c-5.46 0-9.9 4.44-9.9 9.9 0 1.77.47 3.45 1.34 4.96L2 22l5.24-1.39a9.88 9.88 0 004.8 1.39c5.46 0 9.9-4.44 9.9-9.9S17.5 2 12.04 2zM17.5 15.63a.87.87 0 01-.61.26c-.18 0-.36-.05-.51-.15-.43-.27-1.07-.66-2.58-1.28-1.5-.62-2.5-1.12-2.79-1.28a.48.48 0 01-.15-.12c-.05-.08-.09-.16-.09-.27 0-.08.02-.15.05-.22a.57.57 0 01.12-.19c.06-.06.13-.13.23-.21.1-.08.2-.18.3-.26.1-.08.2-.16.3-.23.1-.07.18-.12.24-.15.06-.03.11-.04.14-.04.05 0 .1-.01.15-.01.07 0 .15.01.21.03.06.02.13.04.19.08.06.04.11.08.16.14.05.06.08.1.1.14.02.04.03.07.03.09 0 .03-.01.07-.03.11-.02.04-.04.08-.07.12-.03.04-.05.07-.07.09-.03.04-.04.07-.04.09 0 .04.01.07.02.1.01.03.03.07.05.1.02.03.04.06.06.08.02.02.04.04.05.04.02.02.04.03.05.03.04.03.09.04.14.04.08 0 .16-.01.24-.03.08-.02.16-.05.23-.09.07-.04.14-.09.2-.15.06-.06.11-.12.16-.19.05-.07.09-.15.11-.23.03-.08.05-.17.06-.27.01-.1.01-.2.01-.32 0-.25-.09-.45-.27-.61-.17-.16-.38-.24-.62-.24-.16 0-.3.04-.43.11-.13.07-.24.16-.33.27-.09.11-.16.23-.22.37-.06.14-.09.29-.09.46 0 .16.03.32.09.46.06.14.14.26.24.37s.22.2.35.26c.13.06.27.09.42.09.15 0 .28-.02.41-.06.13-.04.25-.09.36-.16.11-.07.21-.14.3-.22.09-.08.16-.16.22-.24.06-.08.1-.15.12-.2.02-.04.03-.07.03-.09 0-.01-.01-.03-.02-.05-.01-.02-.02-.03-.03-.04.03-.04.06-.08.08-.12.03-.04.05-.08.06-.11.01-.04.01-.07.01-.1 0-.15-.06-.28-.19-.4C17.7 15.6 17.6 15.61 17.5 15.63z"/></svg>
+                        WhatsApp
+                    </a>
+                </div>
+                <p class="text-sm text-gray-500">© 2024 Ismail Katoya Ali. All rights reserved.</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
